@@ -615,7 +615,7 @@ padding: 10px 15px;
     overflow: hidden;
     padding: 0px;
     float:left;
-    
+    max-height: 500px;
 }
 .single-portfolio figure{
    padding: 0px;
