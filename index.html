@@ -68,7 +68,7 @@
                            	<li class="active"> <a href="#slider_part" class="page-scroll">Home </a></li>
                             <li><a href="#service"  class="page-scroll">Serviços</a> </li>
                             <li><a href="#portfolio" class="page-scroll" >Publicações</a> </li>
-                            <li><a href="#about" class="page-scroll">Sobre nós</a> </li>
+                            <li><a href="#about" class="page-scroll">Trabalhe Connosco</a> </li>
                             <li><a href="#team" class="page-scroll">A equipa</a> </li>
                             <li><a href="#contact" class="page-scroll">Contacte-nos</a> </li>
                         </ul>
@@ -116,7 +116,6 @@
                                     <i class="fa fa-university"></i>
                                     <h5>Manuais</h5>
                                     <p>A forma ideal de dotar a sua unidade curricular para um melhor rendimento dos alunos.</p>
-                                    <button class="btn btn-main"> Read More</button>
                                 </div>
                             </div>
                         <div class="col-md-3 col-xs-12 col-sm-6">
@@ -124,7 +123,6 @@
                                     <i class="fa fa-graduation-cap "></i>
                                     <h5>Teses</h5>
                                     <p>Publique este documento importante dando-se, assim, a conhecer a si próprio e ao seu trabalho.</p>
-                                    <button class="btn btn-main"> Read More</button>
                                 </div>
                         </div> <!-- Col-md-4 Single_feature End -->
                         <div class="col-md-3 col-xs-12 col-sm-6">
@@ -132,7 +130,6 @@
                                     <i class="fa fa-book"></i>
                                     <h5>Outros Livros</h5>
                                     <p>É uma oportunidade de publicar o seu texto e ser reconhecido no meio académico nacional.</p>
-                                    <button class="btn btn-main"> Read More</button>
                                 </div>
                         </div> <!-- Col-md-4 Single_feature End -->
                         <div class="col-md-3 col-xs-12 col-sm-6">
@@ -140,7 +137,6 @@
                                     <i class="fa fa-truck"></i>
                                     <h5>Entregas Gratuitas!</h5>
                                     <p>Qualquer livro na Universidade do Algarve - Campus de Gambelas e Campus da Penha.</p>
-                                    <button class="btn btn-main"> Read More</button>
                                 </div>
                         </div> <!-- Col-md-4 Single_feature End -->
                         <!-- <button class="btn btn-main"> Read More</button> -->
@@ -239,7 +235,8 @@
     </div>
         
     <div class="clearfix"></div>
-   			<div class="text-center " ng-repeat="item in items track by $index">
+<!--   			<div class="text-center " ng-repeat="item in items track by $index ">-->
+            <div class="text-center " ng-repeat="item in items track by $index ">
               <ul class="portfolio-wrap" id="portfolio_items" >
                   
                     <li class="col-xs-12 col-sm-6 col-md-3 single-portfolio identity web-design">
@@ -248,10 +245,7 @@
                             <figcaption>
                                 <h5>{{ item.nome }}</h5>
                                 <p class="links">
-                                    <a href="portfolio-single.html"> <i class="fa fa-link"></i></a>
-                                    <a href="images/portfolio/p1.jpg" data-rel="prettyPhoto" class="img-responsive">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
+                                    <a href="portfolio-single.html"> <i class="fa fa-plus"></i></a>
                                 </p>
                                 <p class="description">
                                     {{item.autores}}
@@ -589,8 +583,8 @@
         <div class="row">
   			<div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="feature_header text-center">
-                    <h3 class="feature_title">Keep In <b>touch</b></h3>
-                    <h4 class="feature_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
+                    <h3 class="feature_title">Fale <b>connosco</b></h3>
+                    <h4 class="feature_sub">Se quiser obter informações, não hesite em contactar-nos! </h4>
                     <div class="divider"></div>
                 </div>
   			</div>
@@ -601,7 +595,7 @@
                     <div class="left_contact">
                         <form action="role">
                             <div class="form-level">
-                                <input name="name" placeholder="Name" id="name"  value="" type="text" class="input-block">
+                                <input name="name" placeholder="Nome" id="name"  value="" type="text" class="input-block">
                                 <span class="form-icon fa fa-user"></span>
                             </div>
                             <div class="form-level">
@@ -609,7 +603,7 @@
                                 <span class="form-icon fa fa-envelope-o"></span>
                             </div>
                             <div class="form-level">
-                                <input name="name" placeholder="Phone" id="phone" class="input-block" value="" type="text">
+                                <input name="name" placeholder="Telemóvel" id="phone" class="input-block" value="" type="text">
                                 <span class="form-icon fa fa-phone"></span>
                             </div>
                         </form>
@@ -618,12 +612,12 @@
 
                 <div class="col-md-6 right">
                     <div class="form-level">
-                        <textarea name="" id="messege"  rows="5" class="textarea-block" placeholder="message"></textarea>
+                        <textarea name="" id="messege"  rows="5" class="textarea-block" placeholder="Mensagem"></textarea>
                         <span class="form-icon fa fa-pencil"></span>
                     </div>
                 </div>
                 <div class="col-md-12 text-center">
-                    <button class="btn btn-main featured">Submit Now</button>
+                    <button class="btn btn-main featured">Enviar</button>
                 </div>
             </div>
         </div>
@@ -643,18 +637,7 @@
     <div class="footer_top">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <h3 class="menu_head">Main Menu</h3>
-                    <div class="footer_menu">
-                        <ul>
-                            <li><a href="#about">Home</a></li>
-                            <li><a href="#service">Service</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
+                
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <h3 class="menu_head">Useful Links</h3>
                     <div class="footer_menu">
@@ -668,36 +651,24 @@
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
-                    <h3 class="menu_head">Contact us</h3>
+                    <h3 class="menu_head">Contactos</h3>
                     <div class="footer_menu_contact">
                         <ul>
                             <li> <i class="fa fa-home"></i>
-                                <span> 12 Segun Bagicha, 10th Floor </span></li>
-                            <li><i class="fa fa-globe"></i>
-                                <span> +880-12345678</span></li>
+                                <span> R. Dorília Carmona, nº4, 4ºdto, 8000-316 Faro </span></li>
                             <li><i class="fa fa-phone"></i>
-                                <span> info@mail.com</span></li>
-                            <li><i class="fa fa-map-marker"></i>
-                            <span> www.web.com</span></li>
+                                <span>+351 912 061 766</span></li>
+                            <li><i class="fa fa-fax"></i>
+                                <span>+351 289 805 399</span></li>
+                            <li><i class="fa fa-envelope-o"></i>
+                                <span> info@silabas-e-desafios.pt</span></li>
+                            <li><i class="fa fa-envelope-o"></i>
+                            <span>encomendar@silabas-e-desafios.pt</span></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <h3 class="menu_head">Tags</h3>
-                    <div class="footer_menu tags">
-                        <a href="#"> Design</a>
-                        <a href="#"> User Interface</a>
-                        <a href="#"> Graphics</a>
-                        <a href="#"> Web Design</a>
-                        <a href="#"> Development</a>
-                        <a href="#"> Asp.net</a>
-                        <a href="#"> Bootstrap</a>
-                        <a href="#"> Joomla</a>
-                        <a href="#"> SEO</a>
-                        <a href="#"> Wordepress</a>
-                    </div>
-                </div>
+                
 
             </div>
         </div>
@@ -740,8 +711,7 @@
 
 
 
-<!-- Javascript Files
-    ================================================== -->
+<!-- Javascript Files ================================================== -->
     <!-- initialize jQuery Library -->
 
 		<!-- initialize jQuery Library -->
@@ -782,19 +752,19 @@
      var map;
         map = new GMaps({
           div: '#map',
-          lat: 23.709921,
-          lng: 90.407143,
+          lat: 37.023760,
+          lng: -7.920581,
           scrollwheel: false,
           panControl: false,
           zoomControl: false,
         });
 
         map.addMarker({
-          lat: 23.709921,
-          lng: 90.407143,
-          title: 'Smilebuddy',
+          lat: 37.023760,
+          lng: -7.920581,
+          title: 'S',
           infoWindow: { 
-            content: '<p> Smilebuddy, Dhanmondhi 27</p>'
+            content: '<p> Sílabas & Desafios</p> <p> R. Dorília Carmona, nº4, 4ºdto.</p> <p> 8000-316 Faro </p>'
           },
           icon: "images/map1.png"
         });
