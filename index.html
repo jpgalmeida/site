@@ -146,7 +146,67 @@
     </section>
 <!-- Service Area End -->
      
-<!-- About details start -->
+
+
+<!-- Portfolio works Start -->
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="feature_header text-center">
+                        <h3 class="feature_title"><b>Publicações</b></h3>
+                        <h4 class="feature_sub">Aqui poderá encontrar as nossas diversas publicações.</h4>
+                        <div class="divider"></div>
+                    </div>
+                </div>  <!-- Col-md-12 End -->
+            </div>
+        </div>
+
+
+    <div id="isotope-filter" class="skew3 text-center">
+        <a data-filter="*"  href="#" class="active ">Todos</a>
+        <a data-filter=".identity"  href="#" class="" onclick="getManual()">Manuais</a>
+        <a data-filter=".web-design" href="#"  class="">Teses</a>
+        <a data-filter=".graphic"  href="#" class="">Outros</a>
+    </div>
+        
+    <div class="clearfix"></div>
+<!--   			<div class="text-center " ng-repeat="item in items track by $index ">-->
+            <div class="text-center " ng-repeat="item in items track by $index ">
+              <ul class="portfolio-wrap" id="portfolio_items" >
+                  
+                    <li class="col-xs-12 col-sm-6 col-md-3 single-portfolio identity web-design">
+                        <figure>
+                            <img ng-src="images/portfolio/{{item.ref}}.{{item.imagem}}" alt="" />
+                            <figcaption>
+                                <h5>{{ item.nome }}</h5>
+                                <p class="links">
+                                    <a href="portfolio-single.html"> <i class="fa fa-plus"></i></a>
+                                </p>
+                                <p class="description">
+                                    {{item.autores}}
+                                </p>
+                                <p class="description">
+                                    {{item.preco | currency:"&euro;"}}
+                                </p>
+                                <p class="description">
+                                    Refª: <bold>{{item.ref}}</bold>
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    
+
+                </ul>
+        </div> <!-- Container Full End -->
+</section>  <!-- Portfolio Section End -->
+
+<div class="clearfix"></div>
+
+     
+     <!-- About details start -->
 <section id="about-details">
     <div class="container">
             <div class="row">
@@ -210,61 +270,6 @@
         </div>
 </section>
 <!-- About details end -->
-
-<!-- Portfolio works Start -->
-
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="feature_header text-center">
-                        <h3 class="feature_title"><b>Publicações</b></h3>
-                        <h4 class="feature_sub">Aqui poderá encontrar as nossas diversas publicações.</h4>
-                        <div class="divider"></div>
-                    </div>
-                </div>  <!-- Col-md-12 End -->
-            </div>
-        </div>
-
-
-    <div id="isotope-filter" class="skew3 text-center">
-        <a data-filter="*"  href="#" class="active ">Todos</a>
-        <a data-filter=".identity"  href="#" class="">Manuais</a>
-        <a data-filter=".web-design" href="#"  class="">Teses</a>
-        <a data-filter=".graphic"  href="#" class="">Outros</a>
-    </div>
-        
-    <div class="clearfix"></div>
-<!--   			<div class="text-center " ng-repeat="item in items track by $index ">-->
-            <div class="text-center " ng-repeat="item in items track by $index ">
-              <ul class="portfolio-wrap" id="portfolio_items" >
-                  
-                    <li class="col-xs-12 col-sm-6 col-md-3 single-portfolio identity web-design">
-                        <figure>
-                            <img ng-src="images/portfolio/{{item.ref}}.{{item.imagem}}" alt="" />
-                            <figcaption>
-                                <h5>{{ item.nome }}</h5>
-                                <p class="links">
-                                    <a href="portfolio-single.html"> <i class="fa fa-plus"></i></a>
-                                </p>
-                                <p class="description">
-                                    {{item.autores}}
-                                </p>
-                                <p class="description">
-                                    {{item.preco | currency:"&euro;"}}
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </li>
-
-                    
-
-                </ul>
-        </div> <!-- Container Full End -->
-</section>  <!-- Portfolio Section End -->
-
-<div class="clearfix"></div>
-
      
 <!-- About us start -->
 <section id="about">
@@ -498,7 +503,7 @@
                         	</div>
                         </div>
                         <i class="fa fa-gift fa-3x fw"></i>
-                        <div class="facts-wrap-num"><span class="counter">2</span></div>
+                        <div class="facts-wrap-num"><span class="counter">4</span></div>
                         </div>
                         <h6>anos de experiência</h6>
                     </div>
@@ -624,14 +629,7 @@
     </div>
 </section>
 
-<div id="g-map" class="no-padding">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="map" id="map"></div>
-		</div>
-	</div>
-</div>
-<!-- Footer Area Start -->
+
 
 <section id="footer">
     <div class="footer_top">

@@ -147,7 +147,7 @@ background: #000;
 /*portfolio
 =================*/
 .single-portfolio figcaption,.single-portfolio figcaption .description{
-    background: none repeat scroll 0% 0% #EE3B24;
+    background: none repeat scroll 0% 0% #999999;
 }
 .single-portfolio figcaption .description,.single-portfolio figcaption h5{
       color: #fff!important;

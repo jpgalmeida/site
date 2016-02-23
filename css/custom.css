@@ -637,6 +637,7 @@ padding: 10px 15px;
     -o-transform: translate3d(0px, 0px, 0px);
     transform: translate3d(0px, 0px, 0px);
     cursor: pointer;
+    opacity: 0.9;
 }
 
 .single-portfolio:hover .single-portfolio img{
